@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+      - master
+      - develop
+name: Build & Test
+jobs:
+  test:
+    name: Build
+    runs-on: macOS-latest
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro Max']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install Pods
+        run: |
+          pod install
+      - name: Build
+        run: |
+          xcodebuild clean build -workspace weapp-ios.xcworkspace -scheme weapp-ios -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+         destination: ${{ matrix.destination }}
+      - name: Test
+        run: |
+          xcodebuild clean test -workspace weapp-ios.xcworkspace -scheme weapp-iosTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+         destination: ${{ matrix.destination }}
