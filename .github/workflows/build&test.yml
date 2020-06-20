@@ -25,3 +25,8 @@ jobs:
           xcodebuild clean test -workspace weapp-ios.xcworkspace -scheme weapp-ios -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
          destination: ${{ matrix.destination }}
+      - shell: bash
+        env:
+         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: |
+          bash <(curl -s https://codecov.io/bash) -t "$CODECOV_TOKEN"
