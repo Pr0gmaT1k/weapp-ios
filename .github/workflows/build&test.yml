@@ -1,8 +1,4 @@
-on:
-  push:
-    branches:
-      - master
-      - develop
+on: [push, pull_request]
 name: Build & Test
 jobs:
   test:
@@ -19,13 +15,13 @@ jobs:
       - name: Install Pods
         run: |
           pod install
-      - name: Build
-        run: |
-          xcodebuild clean build -workspace weapp-ios.xcworkspace -scheme weapp-ios -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-        env:
-         destination: ${{ matrix.destination }}
       - name: Test
         run: |
           xcodebuild clean test -workspace weapp-ios.xcworkspace -scheme weapp-ios -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
          destination: ${{ matrix.destination }}
+      - shell: bash
+        env:
+         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: |
+          bash <(curl -s https://codecov.io/bash) -t "$CODECOV_TOKEN"
