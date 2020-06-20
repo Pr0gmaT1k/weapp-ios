@@ -1,8 +1,10 @@
 WEAPP-iOS
 ===============
 [![Language: Swift 5](https://img.shields.io/badge/Swift-5-red.svg?style=flat-square)](https://swift.org)
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/NetworkStack.svg?style=flat-square)](https://cocoapods.org/pods/NetworkStack)
-[![CocoaPods](https://img.shields.io/badge/pod-v1.9.3-blue)]()
+[![CocoaPods](https://img.shields.io/badge/pod-v1.8.4-blue)]()
+[![CodeCov](https://codecov.io/gh/Pr0gmaT1k/weapp-ios/branch/develop/graph/badge.svg)](https://codecov.io/gh/Pr0gmaT1k/weapp-ios)
+[![Licence](https://img.shields.io/badge/license-GPL-blue)
+
 
 Building the code
 -----------------
