@@ -13,6 +13,7 @@ final class LoaderViewTests: XCTestCase {
     // MARK: - Properties
     private var viewController: UIViewController!
     private var topLevelUIUtilities = TopLevelUIViewController<UIViewController>()
+    private var callDidFinish: XCTestExpectation?
 
     // MARK:- Tests
     override func setUp() {
@@ -35,10 +36,25 @@ final class LoaderViewTests: XCTestCase {
         XCTAssert(viewController.loaderIsShown)
     }
 
+    func testInitWithCoder() {
+        let someView = LoaderView(coder: NSCoder())
+        XCTAssertNil(someView)
+    }
+
     func testHideLoader() {
         viewController.showLoader()
         XCTAssert(viewController.loaderIsShown)
         viewController.hideLoader(animated: false)
+        XCTAssert(viewController.loaderIsShown == false)
+
+
+        viewController.showLoader()
+        callDidFinish = expectation(description: "did finish")
+        XCTAssert(viewController.loaderIsShown)
+        viewController.hideLoader(animated: true, completion: {
+            self.callDidFinish?.fulfill()
+        })
+        wait(for: callDidFinish!, timeout: 5)
         XCTAssert(viewController.loaderIsShown == false)
     }
 

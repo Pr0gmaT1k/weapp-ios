@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "test.rtf",
+      "idiom" : "universal",
+      "universal-type-identifier" : "public.rtf"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

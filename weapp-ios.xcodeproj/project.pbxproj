@@ -11,26 +11,24 @@
 		BA237E17249699F500811375 /* LinesCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E16249699F500811375 /* LinesCoordinatorTests.swift */; };
 		BA237E1924969A0500811375 /* StopsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E1824969A0500811375 /* StopsCoordinatorTests.swift */; };
 		BA237E1B24969A1600811375 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E1A24969A1600811375 /* AppCoordinatorTests.swift */; };
-		BA237E1E2496A8A400811375 /* test.realm in Resources */ = {isa = PBXBuildFile; fileRef = BA237E1D2496A8A400811375 /* test.realm */; };
 		BA237E202496A8B600811375 /* AgencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E1F2496A8B600811375 /* AgencyTests.swift */; };
 		BA237E222496A8C100811375 /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E212496A8C100811375 /* CalendarTests.swift */; };
-		BA237E242496A8CE00811375 /* CalendarDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E232496A8CE00811375 /* CalendarDateTests.swift */; };
-		BA237E262496A8DA00811375 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E252496A8DA00811375 /* RouteTests.swift */; };
-		BA237E282496A8E600811375 /* ShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E272496A8E600811375 /* ShapeTests.swift */; };
-		BA237E2A2496A8F300811375 /* StopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E292496A8F200811375 /* StopTests.swift */; };
-		BA237E2C2496A90200811375 /* StopTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E2B2496A90200811375 /* StopTimeTests.swift */; };
-		BA237E2E2496A90D00811375 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E2D2496A90D00811375 /* TripTests.swift */; };
 		BA237E312496B27000811375 /* LoaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E302496B27000811375 /* LoaderViewTests.swift */; };
 		BA237E362496B8D400811375 /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E352496B8D400811375 /* ColorsTests.swift */; };
 		BA237E382496B8E100811375 /* ImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E372496B8E100811375 /* ImagesTests.swift */; };
 		BA237E3A2496B8F400811375 /* StringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E392496B8F400811375 /* StringsTests.swift */; };
+		BA3E9748249FE5D800EFADD0 /* test.realm in Resources */ = {isa = PBXBuildFile; fileRef = BA3E9747249FE5D800EFADD0 /* test.realm */; };
+		BA3E974B249FE9EA00EFADD0 /* RealmObjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E9749249FE91A00EFADD0 /* RealmObjectsTests.swift */; };
+		BA3E974C249FEA2700EFADD0 /* CalendarDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E232496A8CE00811375 /* CalendarDateTests.swift */; };
+		BA3E974D249FEA2700EFADD0 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E252496A8DA00811375 /* RouteTests.swift */; };
+		BA3E974E249FEA2700EFADD0 /* ShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E272496A8E600811375 /* ShapeTests.swift */; };
+		BA3E974F249FEA2700EFADD0 /* StopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E292496A8F200811375 /* StopTests.swift */; };
+		BA3E9750249FEA2700EFADD0 /* StopTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E2B2496A90200811375 /* StopTimeTests.swift */; };
+		BA3E9751249FEA2700EFADD0 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E2D2496A90D00811375 /* TripTests.swift */; };
 		BA46C9C32495378200354552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46C9C22495378200354552 /* AppDelegate.swift */; };
 		BA46C9DA2495378300354552 /* weapp_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46C9D92495378300354552 /* weapp_iosTests.swift */; };
 		BA46C9E52495378300354552 /* weapp_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA46C9E42495378300354552 /* weapp_iosUITests.swift */; };
-		BA60B2B3249586E800A5030E /* Saved.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA60B2B2249586E800A5030E /* Saved.storyboard */; };
 		BA60B2B52495870600A5030E /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60B2B42495870600A5030E /* SavedVC.swift */; };
-		BA60B2B9249588D100A5030E /* Stops.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA60B2B8249588D100A5030E /* Stops.storyboard */; };
-		BA60B2BB249588D800A5030E /* Lines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA60B2BA249588D800A5030E /* Lines.storyboard */; };
 		BA60B2BD249588ED00A5030E /* LinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60B2BC249588ED00A5030E /* LinesVC.swift */; };
 		BA60B2BF2495893600A5030E /* StopsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60B2BE2495893600A5030E /* StopsVC.swift */; };
 		BA60B2C4249594A000A5030E /* TabBarCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA60B2C3249594A000A5030E /* TabBarCoordinatorTests.swift */; };
@@ -55,8 +53,6 @@
 		BA8FEE992495558100B49AE9 /* SavedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8FEE982495558100B49AE9 /* SavedCoordinator.swift */; };
 		BAE731AE24954292002FC7FA /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7318F24954292002FC7FA /* LoaderView.swift */; };
 		BAE731B824954292002FC7FA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7319E24954292002FC7FA /* Strings.swift */; };
-		BAE731BA24954292002FC7FA /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE731A024954292002FC7FA /* Storyboards.swift */; };
-		BAE731BB24954292002FC7FA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE731A124954292002FC7FA /* Fonts.swift */; };
 		BAE731BC24954292002FC7FA /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE731A224954292002FC7FA /* Images.swift */; };
 		BAE731BD24954292002FC7FA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE731A324954292002FC7FA /* Colors.swift */; };
 		BAE731BE24954292002FC7FA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE731A524954292002FC7FA /* AppCoordinator.swift */; };
@@ -65,7 +61,12 @@
 		BAE731C124954292002FC7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE731AA24954292002FC7FA /* LaunchScreen.storyboard */; };
 		BAE731C224954292002FC7FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE731AB24954292002FC7FA /* Assets.xcassets */; };
 		BAE731C724954506002FC7FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAE731C524954506002FC7FA /* Localizable.strings */; };
-		BAF81FB82496C49600697544 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF81FB72496C49600697544 /* CoordinatorTests.swift */; };
+		BAF8A03024A05457003D4784 /* StopsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF8A02F24A05457003D4784 /* StopsPresenter.swift */; };
+		BAF8A03224A05473003D4784 /* StopsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF8A03124A05473003D4784 /* StopsVC.xib */; };
+		BAF8A03424A05481003D4784 /* LinesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF8A03324A05481003D4784 /* LinesVC.xib */; };
+		BAF8A03624A05493003D4784 /* LinesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF8A03524A05493003D4784 /* LinesPresenter.swift */; };
+		BAF8A03824A054A7003D4784 /* SavedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF8A03724A054A7003D4784 /* SavedPresenter.swift */; };
+		BAF8A03A24A054B4003D4784 /* SavedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF8A03924A054B4003D4784 /* SavedVC.xib */; };
 		C86B39258FD26EBF6EBF7A56 /* Pods_weapp_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CBF8A81170B11F3C55CCA2 /* Pods_weapp_iosTests.framework */; };
 		E6D3782EEABD11AD1D0D5BDD /* Pods_weapp_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668E37BCD03EB72814E0CF9D /* Pods_weapp_ios.framework */; };
 /* End PBXBuildFile section */
@@ -96,7 +97,6 @@
 		BA237E16249699F500811375 /* LinesCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesCoordinatorTests.swift; sourceTree = "<group>"; };
 		BA237E1824969A0500811375 /* StopsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsCoordinatorTests.swift; sourceTree = "<group>"; };
 		BA237E1A24969A1600811375 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
-		BA237E1D2496A8A400811375 /* test.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.realm; sourceTree = "<group>"; };
 		BA237E1F2496A8B600811375 /* AgencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyTests.swift; sourceTree = "<group>"; };
 		BA237E212496A8C100811375 /* CalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTests.swift; sourceTree = "<group>"; };
 		BA237E232496A8CE00811375 /* CalendarDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateTests.swift; sourceTree = "<group>"; };
@@ -109,6 +109,8 @@
 		BA237E352496B8D400811375 /* ColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTests.swift; sourceTree = "<group>"; };
 		BA237E372496B8E100811375 /* ImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTests.swift; sourceTree = "<group>"; };
 		BA237E392496B8F400811375 /* StringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsTests.swift; sourceTree = "<group>"; };
+		BA3E9747249FE5D800EFADD0 /* test.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.realm; sourceTree = "<group>"; };
+		BA3E9749249FE91A00EFADD0 /* RealmObjectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjectsTests.swift; sourceTree = "<group>"; };
 		BA46C9BF2495378200354552 /* weapp-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weapp-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA46C9C22495378200354552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA46C9D52495378300354552 /* weapp-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weapp-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,10 +119,7 @@
 		BA46C9E02495378300354552 /* weapp-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weapp-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA46C9E42495378300354552 /* weapp_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weapp_iosUITests.swift; sourceTree = "<group>"; };
 		BA46C9E62495378300354552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA60B2B2249586E800A5030E /* Saved.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Saved.storyboard; sourceTree = "<group>"; };
 		BA60B2B42495870600A5030E /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
-		BA60B2B8249588D100A5030E /* Stops.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stops.storyboard; sourceTree = "<group>"; };
-		BA60B2BA249588D800A5030E /* Lines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lines.storyboard; sourceTree = "<group>"; };
 		BA60B2BC249588ED00A5030E /* LinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesVC.swift; sourceTree = "<group>"; };
 		BA60B2BE2495893600A5030E /* StopsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsVC.swift; sourceTree = "<group>"; };
 		BA60B2C3249594A000A5030E /* TabBarCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -146,8 +145,6 @@
 		BAE7318F24954292002FC7FA /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		BAE7319E24954292002FC7FA /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		BAE7319F24954292002FC7FA /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
-		BAE731A024954292002FC7FA /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		BAE731A124954292002FC7FA /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		BAE731A224954292002FC7FA /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		BAE731A324954292002FC7FA /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		BAE731A524954292002FC7FA /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -157,7 +154,12 @@
 		BAE731AB24954292002FC7FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAE731AD24954292002FC7FA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE731C624954506002FC7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
-		BAF81FB72496C49600697544 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		BAF8A02F24A05457003D4784 /* StopsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsPresenter.swift; sourceTree = "<group>"; };
+		BAF8A03124A05473003D4784 /* StopsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopsVC.xib; sourceTree = "<group>"; };
+		BAF8A03324A05481003D4784 /* LinesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinesVC.xib; sourceTree = "<group>"; };
+		BAF8A03524A05493003D4784 /* LinesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesPresenter.swift; sourceTree = "<group>"; };
+		BAF8A03724A054A7003D4784 /* SavedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPresenter.swift; sourceTree = "<group>"; };
+		BAF8A03924A054B4003D4784 /* SavedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedVC.xib; sourceTree = "<group>"; };
 		DFD43FFC6F60CDE3A097F79C /* Pods-weapp-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weapp-ios.debug.xcconfig"; path = "Target Support Files/Pods-weapp-ios/Pods-weapp-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		EB595BD6DA5E0BFCFAE3F8EB /* Pods-weapp-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weapp-iosTests.release.xcconfig"; path = "Target Support Files/Pods-weapp-iosTests/Pods-weapp-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,7 +214,8 @@
 		BA237E1C2496A72600811375 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BA237E1D2496A8A400811375 /* test.realm */,
+				BA3E9749249FE91A00EFADD0 /* RealmObjectsTests.swift */,
+				BA3E9747249FE5D800EFADD0 /* test.realm */,
 				BA237E1F2496A8B600811375 /* AgencyTests.swift */,
 				BA237E212496A8C100811375 /* CalendarTests.swift */,
 				BA237E232496A8CE00811375 /* CalendarDateTests.swift */,
@@ -308,8 +311,9 @@
 		BA60B2B62495886A00A5030E /* Lines */ = {
 			isa = PBXGroup;
 			children = (
-				BA60B2BA249588D800A5030E /* Lines.storyboard */,
+				BAF8A03524A05493003D4784 /* LinesPresenter.swift */,
 				BA60B2BC249588ED00A5030E /* LinesVC.swift */,
+				BAF8A03324A05481003D4784 /* LinesVC.xib */,
 			);
 			path = Lines;
 			sourceTree = "<group>";
@@ -317,8 +321,9 @@
 		BA60B2B72495886F00A5030E /* Stops */ = {
 			isa = PBXGroup;
 			children = (
-				BA60B2B8249588D100A5030E /* Stops.storyboard */,
+				BAF8A02F24A05457003D4784 /* StopsPresenter.swift */,
 				BA60B2BE2495893600A5030E /* StopsVC.swift */,
+				BAF8A03124A05473003D4784 /* StopsVC.xib */,
 			);
 			path = Stops;
 			sourceTree = "<group>";
@@ -346,7 +351,6 @@
 				BA237E16249699F500811375 /* LinesCoordinatorTests.swift */,
 				BA237E1824969A0500811375 /* StopsCoordinatorTests.swift */,
 				BA237E1A24969A1600811375 /* AppCoordinatorTests.swift */,
-				BAF81FB72496C49600697544 /* CoordinatorTests.swift */,
 			);
 			path = Coordination;
 			sourceTree = "<group>";
@@ -378,8 +382,9 @@
 		BA8FEE9B2495595200B49AE9 /* Saved */ = {
 			isa = PBXGroup;
 			children = (
-				BA60B2B2249586E800A5030E /* Saved.storyboard */,
+				BAF8A03724A054A7003D4784 /* SavedPresenter.swift */,
 				BA60B2B42495870600A5030E /* SavedVC.swift */,
+				BAF8A03924A054B4003D4784 /* SavedVC.xib */,
 			);
 			path = Saved;
 			sourceTree = "<group>";
@@ -427,8 +432,6 @@
 			children = (
 				BAE7319E24954292002FC7FA /* Strings.swift */,
 				BAE7319F24954292002FC7FA /* Colors.txt */,
-				BAE731A024954292002FC7FA /* Storyboards.swift */,
-				BAE731A124954292002FC7FA /* Fonts.swift */,
 				BAE731A224954292002FC7FA /* Images.swift */,
 				BAE731A324954292002FC7FA /* Colors.swift */,
 			);
@@ -462,17 +465,9 @@
 				BAE731C424954506002FC7FA /* Base.lproj */,
 				BAE731AA24954292002FC7FA /* LaunchScreen.storyboard */,
 				BAE731AB24954292002FC7FA /* Assets.xcassets */,
-				BAE731AC24954292002FC7FA /* Fonts */,
 				BAE731AD24954292002FC7FA /* Info.plist */,
 			);
 			path = Ressources;
-			sourceTree = "<group>";
-		};
-		BAE731AC24954292002FC7FA /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		BAE731C424954506002FC7FA /* Base.lproj */ = {
@@ -592,12 +587,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF8A03A24A054B4003D4784 /* SavedVC.xib in Resources */,
+				BAF8A03424A05481003D4784 /* LinesVC.xib in Resources */,
 				BAE731C124954292002FC7FA /* LaunchScreen.storyboard in Resources */,
 				BAE731C724954506002FC7FA /* Localizable.strings in Resources */,
-				BA60B2BB249588D800A5030E /* Lines.storyboard in Resources */,
+				BAF8A03224A05473003D4784 /* StopsVC.xib in Resources */,
 				BAE731C224954292002FC7FA /* Assets.xcassets in Resources */,
-				BA60B2B9249588D100A5030E /* Stops.storyboard in Resources */,
-				BA60B2B3249586E800A5030E /* Saved.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +601,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8FEE7B2495480800B49AE9 /* TopLevelUIUtilities.storyboard in Resources */,
-				BA237E1E2496A8A400811375 /* test.realm in Resources */,
+				BA3E9748249FE5D800EFADD0 /* test.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,7 +692,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SRCDIR=\"$PROJECT_DIR/weapp-ios\"\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards -t scenes-swift4 \"$SRCDIR\" --output \"$SRCDIR/Constants/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets -t swift4 \"$SRCDIR/Ressources/Assets.xcassets\" --output \"$SRCDIR/Constants/Images.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen strings -t structured-swift4 \"$SRCDIR/Ressources/Base.lproj/Localizable.strings\" --output \"$SRCDIR/Constants/Strings.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen colors -t swift4 \"$SRCDIR/Constants/Colors.txt\" --output \"$SRCDIR/Constants/Colors.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen fonts -t swift4 \"$SRCDIR/Ressources/Fonts\" --output \"$SRCDIR/Constants/Fonts.swift\"\n";
+			shellScript = "SRCDIR=\"$PROJECT_DIR/weapp-ios\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets -t swift4 \"$SRCDIR/Ressources/Assets.xcassets\" --output \"$SRCDIR/Constants/Images.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen strings -t structured-swift4 \"$SRCDIR/Ressources/Base.lproj/Localizable.strings\" --output \"$SRCDIR/Constants/Strings.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen colors -t swift4 \"$SRCDIR/Constants/Colors.txt\" --output \"$SRCDIR/Constants/Colors.swift\"\n";
 		};
 		BAE731CA249546C8002FC7FA /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -726,20 +721,21 @@
 			files = (
 				BA8FEE972495557000B49AE9 /* StopsCoordinator.swift in Sources */,
 				BA8FEE8B2495488800B49AE9 /* Trip.swift in Sources */,
-				BAE731BA24954292002FC7FA /* Storyboards.swift in Sources */,
 				BA60B2BD249588ED00A5030E /* LinesVC.swift in Sources */,
 				BAE731BD24954292002FC7FA /* Colors.swift in Sources */,
 				BA60B2B52495870600A5030E /* SavedVC.swift in Sources */,
 				BA8FEE8A2495488800B49AE9 /* Agency.swift in Sources */,
-				BAE731BB24954292002FC7FA /* Fonts.swift in Sources */,
 				BAE731BE24954292002FC7FA /* AppCoordinator.swift in Sources */,
 				BA60B2BF2495893600A5030E /* StopsVC.swift in Sources */,
+				BAF8A03024A05457003D4784 /* StopsPresenter.swift in Sources */,
 				BA8FEE992495558100B49AE9 /* SavedCoordinator.swift in Sources */,
+				BAF8A03824A054A7003D4784 /* SavedPresenter.swift in Sources */,
 				BA8FEE8F2495488800B49AE9 /* Stop.swift in Sources */,
 				BAE731B824954292002FC7FA /* Strings.swift in Sources */,
 				BAE731BC24954292002FC7FA /* Images.swift in Sources */,
 				BA8FEE8E2495488800B49AE9 /* Route.swift in Sources */,
 				BA8FEE952495555000B49AE9 /* LinesCoordinator.swift in Sources */,
+				BAF8A03624A05493003D4784 /* LinesPresenter.swift in Sources */,
 				BA8FEE882495488800B49AE9 /* Shape.swift in Sources */,
 				BAE731BF24954292002FC7FA /* Coordinator.swift in Sources */,
 				BA8FEE892495488800B49AE9 /* Calendar.swift in Sources */,
@@ -759,26 +755,26 @@
 				BA8FEE7D2495480800B49AE9 /* TopLevelUIUtilities.swift in Sources */,
 				BA46C9DA2495378300354552 /* weapp_iosTests.swift in Sources */,
 				BA237E3A2496B8F400811375 /* StringsTests.swift in Sources */,
+				BA3E974F249FEA2700EFADD0 /* StopTests.swift in Sources */,
 				BA237E202496A8B600811375 /* AgencyTests.swift in Sources */,
+				BA3E974E249FEA2700EFADD0 /* ShapeTests.swift in Sources */,
+				BA3E974B249FE9EA00EFADD0 /* RealmObjectsTests.swift in Sources */,
 				BA237E362496B8D400811375 /* ColorsTests.swift in Sources */,
-				BA237E2C2496A90200811375 /* StopTimeTests.swift in Sources */,
-				BA237E282496A8E600811375 /* ShapeTests.swift in Sources */,
 				BA237E15249699DF00811375 /* SavedCoordinatorTests.swift in Sources */,
 				BA60B2C4249594A000A5030E /* TabBarCoordinatorTests.swift in Sources */,
 				BA237E382496B8E100811375 /* ImagesTests.swift in Sources */,
 				BA8FEE7E2495480800B49AE9 /* XCTestCase+Utils.swift in Sources */,
 				BA8FEE7C2495480800B49AE9 /* EquatableExpectation.swift in Sources */,
+				BA3E9750249FEA2700EFADD0 /* StopTimeTests.swift in Sources */,
+				BA3E974D249FEA2700EFADD0 /* RouteTests.swift in Sources */,
 				BA237E17249699F500811375 /* LinesCoordinatorTests.swift in Sources */,
-				BA237E2A2496A8F300811375 /* StopTests.swift in Sources */,
-				BA237E242496A8CE00811375 /* CalendarDateTests.swift in Sources */,
-				BA237E2E2496A90D00811375 /* TripTests.swift in Sources */,
 				BA8FEE7F2495480800B49AE9 /* Duration.swift in Sources */,
 				BA237E1B24969A1600811375 /* AppCoordinatorTests.swift in Sources */,
+				BA3E974C249FEA2700EFADD0 /* CalendarDateTests.swift in Sources */,
 				BA8FEE792495480800B49AE9 /* FulfillableViewController.swift in Sources */,
+				BA3E9751249FEA2700EFADD0 /* TripTests.swift in Sources */,
 				BA237E312496B27000811375 /* LoaderViewTests.swift in Sources */,
 				BA237E1924969A0500811375 /* StopsCoordinatorTests.swift in Sources */,
-				BAF81FB82496C49600697544 /* CoordinatorTests.swift in Sources */,
-				BA237E262496A8DA00811375 /* RouteTests.swift in Sources */,
 				BA8FEE7A2495480800B49AE9 /* XCTest+Utils.swift in Sources */,
 				BA237E222496A8C100811375 /* CalendarTests.swift in Sources */,
 			);
@@ -851,6 +847,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -911,6 +908,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

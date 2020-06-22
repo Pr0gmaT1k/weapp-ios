@@ -21,10 +21,10 @@ final class SavedCoordinator: CoordinatorPresentable {
     var rootViewController: SavedVC
 
     init() {
-        rootViewController = StoryboardScene.Saved.savedVC.instantiate()
+        rootViewController = SavedVC()
         rootViewController.delegate = self
     }
-
+    
     func start() {}
 }
 

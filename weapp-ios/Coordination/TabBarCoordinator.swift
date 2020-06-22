@@ -20,6 +20,7 @@ final class TabBarCoordinator: CoordinatorNavigable {
     weak var delegate: TabBarCoordinatorDelegate?
     var childCoordinators: [Coordinator] = []
     var navigator: NavigatorType
+    private let tabBarC: UITabBarController
     var rootViewController: UINavigationController
 
     // MARK: - Func
@@ -37,13 +38,13 @@ final class TabBarCoordinator: CoordinatorNavigable {
         savedCoordinator.rootViewController.tabBarItem.title = "3"
 
         // TabBarVC
-        let tabBarVC = UITabBarController()
-        tabBarVC.view.backgroundColor = .white
-        tabBarVC.tabBar.unselectedItemTintColor = .black
-        tabBarVC.viewControllers = [stopsCoordinator.rootViewController, linesCoordinator.rootViewController, savedCoordinator.rootViewController]
+        tabBarC = UITabBarController()
+        tabBarC.view.backgroundColor = .white
+        tabBarC.tabBar.unselectedItemTintColor = .black
+        tabBarC.viewControllers = [stopsCoordinator.rootViewController, linesCoordinator.rootViewController, savedCoordinator.rootViewController]
 
         // Navigation
-        rootViewController = UINavigationController(rootViewController: tabBarVC)
+        rootViewController = UINavigationController(rootViewController: tabBarC)
         rootViewController.navigationBar.isHidden = true
         rootViewController.modalPresentationStyle = .fullScreen
         rootViewController.modalTransitionStyle = .crossDissolve
@@ -53,6 +54,14 @@ final class TabBarCoordinator: CoordinatorNavigable {
         stopsCoordinator.delegate = self
         linesCoordinator.delegate = self
         savedCoordinator.delegate = self
+    }
+
+    func open(deepLink: Deeplinkable) {
+        switch deepLink {
+        case .stops: tabBarC.selectedIndex = 0
+        case .lines: tabBarC.selectedIndex = 1
+        case .saved: tabBarC.selectedIndex = 2
+        }
     }
 
     func start() {

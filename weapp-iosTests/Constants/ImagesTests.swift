@@ -11,7 +11,7 @@ import XCTest
 
 class ImagesTests: XCTestCase {
     func testLoadImage() {
-        let image: UIImage? = UIImage(asset: Asset.test)
+        let image: UIImage? = UIImage(asset: Asset.testImage)
         XCTAssert(image != nil)
     }
 
@@ -21,17 +21,37 @@ class ImagesTests: XCTestCase {
     }
 
     func testGetImage() {
-        let image: Any? = Asset.test.image
+        let image: Any? = Asset.testImage.image
         XCTAssert(image != nil)
     }
 
     func testGetCGImage() {
-        let image: Any? = Asset.test.image.cgImage
+        let image: Any? = Asset.testImage.image.cgImage
         XCTAssert(image != nil)
     }
 
     func testGetCIImage() {
-        let image: Any? = Asset.test.image.ciImage
+        let image: Any? = Asset.testImage.image.ciImage
         XCTAssert(image == nil) // not supported
+    }
+
+    func testColorAsset() {
+        let color: UIColor? = UIColor(asset: Asset.testColor)
+        XCTAssert(color != nil)
+    }
+
+    func testGetColorAsset() {
+        let color: Any? = Asset.testColor.color
+        XCTAssert(color != nil)
+    }
+
+    func testDataAsset() {
+        let data: NSDataAsset? = NSDataAsset.init(asset: Asset.testData)
+        XCTAssert(data != nil)
+    }
+
+    func testGetDataAsset() {
+        let data: Any? = Asset.testData.data
+        XCTAssert(data != nil)
     }
 }

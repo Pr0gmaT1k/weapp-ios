@@ -15,6 +15,7 @@ final class TabBarCoordinatorTests: XCTestCase {
     private var callDidFinish: XCTestExpectation?
     private var callDidPush: XCTestExpectation?
     private var callDidPop: XCTestExpectation?
+    private var callDidPop2: XCTestExpectation?
     private var callDidTapBack: XCTestExpectation?
 
     // MARK:- Tests
@@ -75,6 +76,73 @@ final class TabBarCoordinatorTests: XCTestCase {
         }
         subCoordinator.delegate?.savedCoordinatorDidFinish(subCoordinator)
         wait(for: callDidFinish!)
+    }
+
+    func testOpenDeepLink() {
+        coordinator.open(deepLink: .stops)
+        XCTAssert((coordinator.navigator.navigationController.viewControllers.first as? UITabBarController)?.selectedViewController is StopsVC)
+
+        coordinator.open(deepLink: .lines)
+        XCTAssert((coordinator.navigator.navigationController.viewControllers.first as? UITabBarController)?.selectedViewController is LinesVC)
+
+        coordinator.open(deepLink: .saved)
+        XCTAssert((coordinator.navigator.navigationController.viewControllers.first as? UITabBarController)?.selectedViewController is SavedVC)
+    }
+
+    func testPopToRootVC() {
+        let vc = UIViewController()
+        coordinator.navigator.setRootViewController(vc, animated: false)
+        coordinator.navigator.push(SavedVC(), animated: false)
+        coordinator.navigator.push(SavedVC(), animated: false)
+        coordinator.navigator.push(SavedVC(), animated: false)
+        var onTop = coordinator.navigator.navigationController.viewControllers.last
+        XCTAssert(onTop is SavedVC)
+        coordinator.navigator.popToRootViewController(animated: false)
+        onTop = coordinator.navigator.navigationController.viewControllers.last
+        XCTAssert(vc == onTop)
+    }
+
+    func testSetRootVC() {
+        coordinator.navigator.setRootViewController(SavedVC(), animated: false)
+        let vcs = coordinator.navigator.navigationController.viewControllers
+        XCTAssert(vcs.count == 1 && vcs.first is SavedVC)
+    }
+
+    func testPushVC() {
+        coordinator.pushCoordinator(SavedCoordinator(), animated: true)
+        XCTAssert(coordinator.childCoordinators.last is SavedCoordinator)
+    }
+
+    func testPopToVC() {
+        coordinator.navigator.setRootViewController(SavedVC(), animated: false)
+        let vc = UIViewController()
+        coordinator.push(vc: vc, animated: false)
+        coordinator.push(vc: StopsVC(), animated: false)
+        coordinator.navigator.popToViewController(vc, animated: false)
+        XCTAssert(coordinator.navigator.navigationController.viewControllers.last == vc)
+    }
+
+    func testPopVC() {
+        callDidPop2 = expectation(description: "did pop")
+        coordinator.navigator.setRootViewController(SavedVC(), animated: false)
+        let vc = UIViewController()
+        coordinator.push(vc: vc, animated: false)
+        coordinator.navigator.push(StopsVC(), animated: false, onPoppedCompletion: {
+            self.callDidPop2?.fulfill()
+        })
+        coordinator.navigator.popViewController(animated: false)
+        wait(for: callDidPop2!)
+        XCTAssert(coordinator.navigator.navigationController.viewControllers.last == vc)
+    }
+
+    func testDidShowWithItself() {
+        // Only no crash = ok
+        (coordinator.navigator as? Navigator)?.navigationController(coordinator.navigator.navigationController, didShow: UIViewController(), animated: false)
+    }
+
+    func testDidShow() {
+        // Only no crash = ok
+        (coordinator.navigator as? Navigator)?.navigationController(UINavigationController(), didShow: UIViewController(), animated: false)
     }
 }
 
