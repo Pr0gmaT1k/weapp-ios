@@ -10,17 +10,7 @@ import XCTest
 import RealmSwift
 @testable import weapp_ios
 
-class ShapeTests: XCTestCase {
-    // MARK:- Properties
-    var realm: Realm!
-
-    // MARK:- Init
-    override func setUp() {
-        super.setUp()
-        guard let config = Bundle(identifier: "cl.azerty.weapp-iosTests")?.url(forResource: "test", withExtension: "realm") else { return }
-        realm = try! Realm(fileURL: config)
-    }
-
+class ShapeTests: RealmObjectsTests {
     func testLoad() {
         XCTAssert(realm.objects(Shape.self).first != nil)
     }

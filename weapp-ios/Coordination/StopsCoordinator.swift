@@ -21,7 +21,7 @@ final class StopsCoordinator: CoordinatorPresentable {
     var rootViewController: StopsVC
 
     init() {
-        rootViewController = StoryboardScene.Stops.stopsVC.instantiate()
+        rootViewController = StopsVC()
         rootViewController.delegate = self
     }
 

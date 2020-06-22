@@ -10,9 +10,12 @@ import UIKit
 
 protocol StopsVCDelegate: class {}
 
-final class StopsVC: UIViewController {
+protocol StopsDisplayable: class {}
+
+final class StopsVC: UIViewController, StopsDisplayable {
     // MARK:- Properties
     weak var delegate: StopsVCDelegate?
+    lazy var presenter = StopsPresenter(view: self)
 
     // MARK:- Funcs
     override func viewDidLoad() {

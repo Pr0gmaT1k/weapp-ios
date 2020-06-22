@@ -45,6 +45,8 @@ protocol NavigatorType {
     /** Replaces all the view controllers currently managed by the navigation controller a new root view controller. */
     func setRootViewController(_ viewController: UIViewController, animated: Bool)
 
+    var navigationController: UINavigationController { get }
+
     var delegate: NavDelegate? { get set }
 }
 
@@ -66,7 +68,7 @@ extension NavigatorType {
 
 final class Navigator: NSObject, NavigatorType {
     weak var delegate: NavDelegate?
-    private let navigationController: UINavigationController
+    var navigationController: UINavigationController
     private var completions: [UIViewController: () -> Void]
     
     init(navigationController: UINavigationController = UINavigationController()) {
@@ -85,19 +87,13 @@ final class Navigator: NSObject, NavigatorType {
 extension Navigator {
     
     func popToRootViewController(animated: Bool) -> [UIViewController]? {
-        if let poppedControllers = navigationController.popToRootViewController(animated: animated) {
-            poppedControllers.forEach { runCompletion(for: $0) }
-            return poppedControllers
-        }
-        return nil
+        let poppedControllers = navigationController.popToRootViewController(animated: animated)
+        return poppedControllers
     }
     
     func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]? {
-        if let poppedControllers = navigationController.popToViewController(viewController, animated: animated) {
-            poppedControllers.forEach { runCompletion(for: $0) }
-            return poppedControllers
-        }
-        return nil
+        let poppedControllers = navigationController.popToViewController(viewController, animated: animated)
+        return poppedControllers
     }
     
     func popViewController(animated: Bool) -> UIViewController? {
@@ -119,7 +115,6 @@ extension Navigator {
     }
 
     func setRootViewController(_ viewController: UIViewController, animated: Bool) {
-        completions.forEach { $0.value() }      // call completions so all view controllers are deallocated
         completions = [:]
         navigationController.setViewControllers([viewController], animated: animated)
     }
@@ -133,7 +128,7 @@ extension Navigator: UINavigationControllerDelegate {
     // Runs completion handler when a user swipes-to-go-back or taps the back button in the navigation bar.
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let poppingViewController = navigationController.transitionCoordinator?.viewController(forKey: .from),    // ensure the view controller is popping
+        guard let poppingViewController = navigationController.transitionCoordinator?.viewController(forKey: .from),
             !navigationController.viewControllers.contains(poppingViewController) else {
                 return
         }

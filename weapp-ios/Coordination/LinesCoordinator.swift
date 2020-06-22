@@ -21,7 +21,7 @@ final class LinesCoordinator: CoordinatorPresentable {
     var rootViewController: LinesVC
 
     init() {
-        rootViewController = StoryboardScene.Lines.linesVC.instantiate()
+        rootViewController = LinesVC()
         rootViewController.delegate = self
     }
 

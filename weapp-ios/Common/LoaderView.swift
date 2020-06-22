@@ -22,7 +22,7 @@ final class LoaderView: UIView {
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        return nil
     }
     
     /// Fade in
@@ -33,12 +33,13 @@ final class LoaderView: UIView {
     }
     
     /// Fade out
-    func hide(animated: Bool = true) {
+    func hide(animated: Bool = true, completion: (() -> Void)? = nil) {
         if animated {
             UIView.animate(withDuration: 0.5, animations: {
                 self.alpha = 0.0
             }, completion: { _ in
                 self.removeFromSuperview()
+                completion?()
             })
         } else {
             self.alpha = 0.0
@@ -62,8 +63,8 @@ extension UIViewController {
     }
     
     /// Fade out
-    func hideLoader(animated: Bool = true) {
+    func hideLoader(animated: Bool = true, completion: (() -> Void)? = nil) {
         let loaderViews = self.view.subviews.filter { $0 is LoaderView }
-        _ = loaderViews.map { ($0 as? LoaderView)?.hide(animated: animated) }
+        _ = loaderViews.map { ($0 as? LoaderView)?.hide(animated: animated, completion: completion) }
     }
 }

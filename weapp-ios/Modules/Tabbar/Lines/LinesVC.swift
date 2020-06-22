@@ -10,9 +10,12 @@ import UIKit
 
 protocol LinesVCDelegate: class {}
 
-final class LinesVC: UIViewController {
+protocol LinesDisplayable: class {}
+
+final class LinesVC: UIViewController, LinesDisplayable {
     // MARK:- Properties
     weak var delegate: LinesVCDelegate?
+    lazy var presenter = LinesPresenter(view: self)
 
     // MARK:- Funcs
     override func viewDidLoad() {
