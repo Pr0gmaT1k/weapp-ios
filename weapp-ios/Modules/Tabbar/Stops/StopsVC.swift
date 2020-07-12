@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CartoMobileSDK
 
 protocol StopsVCDelegate: class {}
 
-protocol StopsDisplayable: class {}
+protocol StopsDisplayable: MapDisplayable {
+    var presenter: StopsPresenter { get set }
+}
 
 final class StopsVC: UIViewController, StopsDisplayable {
+    // MARK:- IBOutlets
+    @IBOutlet weak var mapView: NTMapView!
+
     // MARK:- Properties
     weak var delegate: StopsVCDelegate?
     lazy var presenter = StopsPresenter(view: self)
@@ -20,5 +26,6 @@ final class StopsVC: UIViewController, StopsDisplayable {
     // MARK:- Funcs
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.fill(map: mapView)
     }
 }

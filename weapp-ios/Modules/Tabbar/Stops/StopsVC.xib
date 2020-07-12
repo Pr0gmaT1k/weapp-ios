@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StopsVC" customModule="weapp_ios" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="RQp-uJ-6OP" id="Pf7-Aw-AyA"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1Wk-Va-EyE"/>
             </connections>
         </placeholder>
@@ -17,7 +18,21 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQp-uJ-6OP" customClass="NTMapView">
+                    <rect key="frame" x="0.0" y="337.5" width="414" height="221"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RQp-uJ-6OP" secondAttribute="height" multiplier="15:8" id="wy0-9G-wYm"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RQp-uJ-6OP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FJU-qR-FGL"/>
+                <constraint firstItem="RQp-uJ-6OP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h7i-is-052"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RQp-uJ-6OP" secondAttribute="trailing" id="iJY-5y-DgP"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="108"/>
         </view>
