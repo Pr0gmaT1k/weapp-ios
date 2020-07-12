@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK:- StopPresentable
-protocol StopPresentable {
+protocol StopPresentable: MapPresentable {
     // MARK:- Funcs
     init(view: StopsDisplayable)
 }

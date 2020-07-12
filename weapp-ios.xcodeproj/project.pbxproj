@@ -17,6 +17,9 @@
 		BA237E362496B8D400811375 /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E352496B8D400811375 /* ColorsTests.swift */; };
 		BA237E382496B8E100811375 /* ImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E372496B8E100811375 /* ImagesTests.swift */; };
 		BA237E3A2496B8F400811375 /* StringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E392496B8F400811375 /* StringsTests.swift */; };
+		BA3A13CE24BBA215001686EB /* tiles.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BA3A13CD24BBA215001686EB /* tiles.mbtiles */; };
+		BA3A13D124BBAA57001686EB /* MapDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A13D024BBAA57001686EB /* MapDisplayable.swift */; };
+		BA3A13D324BBAA8B001686EB /* MapPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A13D224BBAA8B001686EB /* MapPresentable.swift */; };
 		BA3E9748249FE5D800EFADD0 /* test.realm in Resources */ = {isa = PBXBuildFile; fileRef = BA3E9747249FE5D800EFADD0 /* test.realm */; };
 		BA3E974B249FE9EA00EFADD0 /* RealmObjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3E9749249FE91A00EFADD0 /* RealmObjectsTests.swift */; };
 		BA3E974C249FEA2700EFADD0 /* CalendarDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA237E232496A8CE00811375 /* CalendarDateTests.swift */; };
@@ -109,6 +112,9 @@
 		BA237E352496B8D400811375 /* ColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTests.swift; sourceTree = "<group>"; };
 		BA237E372496B8E100811375 /* ImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTests.swift; sourceTree = "<group>"; };
 		BA237E392496B8F400811375 /* StringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsTests.swift; sourceTree = "<group>"; };
+		BA3A13CD24BBA215001686EB /* tiles.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = tiles.mbtiles; sourceTree = "<group>"; };
+		BA3A13D024BBAA57001686EB /* MapDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDisplayable.swift; sourceTree = "<group>"; };
+		BA3A13D224BBAA8B001686EB /* MapPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresentable.swift; sourceTree = "<group>"; };
 		BA3E9747249FE5D800EFADD0 /* test.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.realm; sourceTree = "<group>"; };
 		BA3E9749249FE91A00EFADD0 /* RealmObjectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjectsTests.swift; sourceTree = "<group>"; };
 		BA46C9BF2495378200354552 /* weapp-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weapp-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +252,23 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		BA3A13CC24BBA1E8001686EB /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A13CD24BBA215001686EB /* tiles.mbtiles */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		BA3A13CF24BBAA42001686EB /* MAPDisplayable */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A13D024BBAA57001686EB /* MapDisplayable.swift */,
+				BA3A13D224BBAA8B001686EB /* MapPresentable.swift */,
+			);
+			path = MAPDisplayable;
+			sourceTree = "<group>";
+		};
 		BA46C9B62495378200354552 = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +395,7 @@
 		BA8FEE9A2495587F00B49AE9 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				BA3A13CF24BBAA42001686EB /* MAPDisplayable */,
 				BA60B2B72495886F00A5030E /* Stops */,
 				BA60B2B62495886A00A5030E /* Lines */,
 				BA8FEE9B2495595200B49AE9 /* Saved */,
@@ -462,6 +486,7 @@
 		BAE731A924954292002FC7FA /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				BA3A13CC24BBA1E8001686EB /* Maps */,
 				BAE731C424954506002FC7FA /* Base.lproj */,
 				BAE731AA24954292002FC7FA /* LaunchScreen.storyboard */,
 				BAE731AB24954292002FC7FA /* Assets.xcassets */,
@@ -593,6 +618,7 @@
 				BAE731C724954506002FC7FA /* Localizable.strings in Resources */,
 				BAF8A03224A05473003D4784 /* StopsVC.xib in Resources */,
 				BAE731C224954292002FC7FA /* Assets.xcassets in Resources */,
+				BA3A13CE24BBA215001686EB /* tiles.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,12 +755,14 @@
 				BA60B2BF2495893600A5030E /* StopsVC.swift in Sources */,
 				BAF8A03024A05457003D4784 /* StopsPresenter.swift in Sources */,
 				BA8FEE992495558100B49AE9 /* SavedCoordinator.swift in Sources */,
+				BA3A13D324BBAA8B001686EB /* MapPresentable.swift in Sources */,
 				BAF8A03824A054A7003D4784 /* SavedPresenter.swift in Sources */,
 				BA8FEE8F2495488800B49AE9 /* Stop.swift in Sources */,
 				BAE731B824954292002FC7FA /* Strings.swift in Sources */,
 				BAE731BC24954292002FC7FA /* Images.swift in Sources */,
 				BA8FEE8E2495488800B49AE9 /* Route.swift in Sources */,
 				BA8FEE952495555000B49AE9 /* LinesCoordinator.swift in Sources */,
+				BA3A13D124BBAA57001686EB /* MapDisplayable.swift in Sources */,
 				BAF8A03624A05493003D4784 /* LinesPresenter.swift in Sources */,
 				BA8FEE882495488800B49AE9 /* Shape.swift in Sources */,
 				BAE731BF24954292002FC7FA /* Coordinator.swift in Sources */,

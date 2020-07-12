@@ -6,6 +6,7 @@ target 'weapp-ios' do
   pod 'RealmSwift'
   pod 'SwiftLint'
   pod 'SwiftGen'
+  pod 'CartoMobileSDK'
 
   target 'weapp-iosTests' do
     inherit! :search_paths
